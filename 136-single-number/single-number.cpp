@@ -9,6 +9,7 @@ public:
         for(auto n :map){
             if(n.second == 1){
                 ans = n.first;
+                break;
             }
         }
         return ans;
