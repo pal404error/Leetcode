@@ -20,9 +20,6 @@ public:
     int kthSmallest(TreeNode* root, int k) {
         vector<int> arr;
         inorder(root, arr);
-        for(auto i: arr){
-            cout<<i<<" ";
-        }
         return arr[k-1];
     }
 };
