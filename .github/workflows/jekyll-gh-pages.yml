@@ -49,3 +49,11 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Update readme
+        run: |
+          echo " ### $(date)  on " ${{ steps.deployment.outputs.page_url }}  >> README.md
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "update readme log"
+          git push
