@@ -26,7 +26,6 @@ public:
         }
         x->next = list2;
         ListNode* last = list2;
-        cout<<cur->val;
         while(last->next != NULL){ last = last->next;}
         last->next = cur;
         return head;
