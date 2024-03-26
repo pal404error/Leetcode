@@ -1,16 +1,13 @@
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        unordered_map<int,int> map;
-        for(auto i :nums){
-            map[i]++;
+        if(nums.size() ==1){
+            return nums[0];
         }
-        int ans;
-        for(auto n :map){
-            if(n.second == 1){
-                ans = n.first;
-            }
+        int x=0;
+        for(auto i:nums){
+            x ^= i;
         }
-        return ans;
+        return x;
     }
 };
