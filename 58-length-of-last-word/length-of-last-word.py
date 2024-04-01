@@ -4,7 +4,5 @@ class Solution:
         for i in s:
             a = s.split()
 
-        print()
-
-        c = len(a[-1])
-        return c
+        
+        return len(a[-1])
