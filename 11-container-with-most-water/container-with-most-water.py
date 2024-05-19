@@ -5,7 +5,6 @@ class Solution:
         while l<r:
             m = min(height[l], height[r])
             t = m * (r-l)
-            print(t)
             ans = max(t,ans)
             if(height[r] > height[l]):
                 l+=1
