@@ -7,7 +7,6 @@ class Solution:
             if a == 1:
                 break
             if a%2 == 0:
-                
                 n+=1
                 a = a// 2
             else:
