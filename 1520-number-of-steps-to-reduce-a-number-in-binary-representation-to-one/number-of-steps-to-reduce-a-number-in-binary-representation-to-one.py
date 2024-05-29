@@ -2,10 +2,8 @@ class Solution:
     def numSteps(self, s: str) -> int:
         a = int(s, 2)
         n=0
-        while True:
+        while a !=1:
             # print(a)
-            if a == 1:
-                break
             if a%2 == 0:
                 n+=1
                 a = a// 2
