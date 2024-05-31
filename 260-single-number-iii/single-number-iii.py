@@ -1,11 +1,11 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> List[int]:
-        ans = []
+        ans = set()
         for i in nums:
             if i in ans:
                 ans.remove(i)
                 
             else:
-                ans.append(i)
+                ans.add(i)
         
-        return ans
+        return list(ans)
