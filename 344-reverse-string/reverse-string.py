@@ -8,7 +8,7 @@ class Solution:
         # print(n)
         for i in range(0,n):
             t = s[n1-i]
-            print(t)
+            # print(t)
             s[n1-i] = s[i]
             s[i] = t
 
