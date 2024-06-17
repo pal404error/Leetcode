@@ -1,7 +1,7 @@
 class Solution:
     def judgeSquareSum(self, c: int) -> bool:
         s,l = 0, int(math.sqrt(c))
-        print(l)
+        # print(l)
         while s<=l:
             sum = (s*s) + (l*l)
             if sum == c:
